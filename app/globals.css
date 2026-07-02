@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: 248 250 252;
+  --foreground: 8 13 24;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: 3 7 18;
+  --foreground: 248 250 252;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.35);
+  color: rgb(var(--foreground));
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+}
+
+.glass-card {
+  @apply border border-slate-200/70 bg-white/75 shadow-xl shadow-slate-200/40 backdrop-blur-xl dark:border-white/10 dark:bg-white/[0.055] dark:shadow-black/30;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-slate-950 via-cyan-700 to-blue-600 bg-clip-text text-transparent dark:from-white dark:via-cyan-200 dark:to-blue-300;
+}
+
+.focus-ring {
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-400;
+}
+
+.noise-overlay {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at center, black, transparent 72%);
+}
