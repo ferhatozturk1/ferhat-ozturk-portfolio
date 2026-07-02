@@ -73,6 +73,7 @@ export function Hero() {
             </a>
             <a
               href={profile.cvPath}
+              download="Ferhat_Ozturk_CV.pdf"
               className="focus-ring inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white/70 px-5 py-3 text-sm font-bold text-slate-900 transition hover:border-cyan-500 hover:text-cyan-700 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:text-cyan-200"
             >
               Download CV
