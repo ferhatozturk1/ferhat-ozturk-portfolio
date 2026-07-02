@@ -28,3 +28,15 @@ Open `http://localhost:3000` in your browser.
 npm run build
 npm run start
 ```
+
+## Vercel Deployment
+
+This project includes `vercel.json` so Vercel uses the Next.js framework preset and the correct build commands.
+
+Recommended Vercel project settings:
+
+- Framework Preset: `Next.js`
+- Root Directory: repository root
+- Install Command: `npm ci`
+- Build Command: `npm run build`
+- Output Directory: leave empty/default
